@@ -20,7 +20,7 @@ A cloud-based retail sales analytics project that processes sales data and provi
 - Azure CLI
 - Visual Studio Code
 
-## Project Workflow
+## Workflow
 
 ```text
 Amazon Sales Dataset
@@ -34,28 +34,32 @@ Azure Blob Storage
 Azure Functions
    ↙              ↘
 Sales Health API   Scheduled KPI Monitoring
-'''text
+```
 
 ## API Endpoint
 
-Sales Health API:
+**Sales Health API:**
 
 https://retailsaleshealthapi8216.azurewebsites.net/api/sales-health
 
 The API provides insights such as:
 
-Total revenue, orders, and units
-Top-performing region
-Revenue at risk
-Cancelled orders and cancellation rate
-Sales health score and status
+- Total revenue, orders, and units
+- Top-performing region
+- Revenue at risk
+- Cancelled orders and cancellation rate
+- Sales health score and status
 
 ## Azure Functions
-sales_health — HTTP-triggered API for sales insights
-scheduled_sales_kpi — Timer-triggered KPI monitoring
+
+- `sales_health` — HTTP-triggered API for sales insights
+- `scheduled_sales_kpi` — Timer-triggered KPI monitoring
 
 ## Project Structure
+
+```text
 data/          # Raw dataset
 etl/           # ETL script
 function_app/  # Azure Function application
 output/        # Processed dataset
+```
